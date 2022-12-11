@@ -5,8 +5,8 @@
 
 
 ## Контакты
-* Telegram - (@PavelSemenov88) 
-* Discord - (Павел88#7174)
+* [Telegram](@PavelSemenov88) 
+* [Discord](Павел88#7174)
 
 
 *****
