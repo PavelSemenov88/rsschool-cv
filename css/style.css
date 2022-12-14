@@ -1,0 +1,85 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+ul, h1, h2, h3, h4, h5 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .header .container {
+    width: 95%;
+    padding-right: 15px;
+  }
+}
+.header .container .menu {
+  background: #f6f6f6;
+}
+.header .container .menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.header .container .menu ul .menu-list .menu-list__item {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.header .container .menu ul .menu-list .menu-list__item:before {
+  position: absolute;
+  bottom: -5px;
+  content: " ";
+  border-bottom: 2px solid #000;
+  transform: scale(0, 1);
+  width: 100%;
+  transition: 0.3s;
+}
+.header .container .menu ul .menu-list .menu-list__item:hover::before {
+  transform: scale(1, 1);
+}
+
+.main {
+  width: 100vw;
+  padding-top: 50px;
+}
+.main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .main .container {
+    width: 95%;
+    padding-right: 15px;
+  }
+}
+.main .container .intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .container .intro .intro-title {
+  font-size: 80px;
+  line-height: 100px;
+  margin: 0;
+  color: #bbbbbb;
+}
+.main .container .intro .intro-img .intro-img__foto {
+  width: 500px;
+}/*# sourceMappingURL=style.css.map */

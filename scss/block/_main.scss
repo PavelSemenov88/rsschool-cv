@@ -1,0 +1,32 @@
+.main {
+  width: 100vw;
+  padding-top: 50px;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (max-width: 1250px) {
+      width: 95%;
+      padding-right: 15px;
+    }
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .intro-title {
+        font-size: 80px;
+        line-height: 100px;
+        margin: 0;
+        color: $text-gray;
+      }
+      .intro-img {
+        
+        .intro-img__foto {
+          width: 500px;
+
+        }
+      }
+    }
+  }
+}

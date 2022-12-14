@@ -1,0 +1,52 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (max-width: 1250px) {
+      width: 95%;
+      padding-right: 15px;
+    }
+    
+    .menu {
+      background: $fone-header;
+      
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+
+        .menu-list {
+
+          .menu-list__item {
+            text-decoration: none;
+            color: $black-text;
+            position: relative;
+          }
+
+          .menu-list__item:before {
+            position: absolute;
+            bottom: -5px;
+            content: " ";
+            border-bottom: 2px solid $black-text;
+            transform: scale(0, 1);
+            width: 100%;
+            transition: 0.3s;
+          }
+
+          .menu-list__item:hover::before {
+            transform: scale(1, 1);
+          }
+        }
+      }
+    }
+  }
+}
