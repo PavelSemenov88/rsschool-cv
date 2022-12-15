@@ -1,17 +1,59 @@
 $black-text: #000;
 $fone-header: #f6f6f6;
-$text-gray: #bbbbbb;
+$title-gray: #bbbbbb;
+$text-gray: #6d6d6d;
 
 body {
   background-color: #ffffff;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
-ul, h1, h2, h3, h4, h5 {
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+}
+
+.title-h3 {
+  font-size: 26px;
+  line-height: 39px;
+  // display: block;
+  font-family: "Poppins", sans-serif;
+  color: $black-text;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 2;
+}
+.main-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: $text-gray;
+  font-size: 22px;
+  line-height: 33px;
+
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  @media (max-width: 320) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 @import "block/_header";
 @import "block/_main";
+@import "block/_footer";
