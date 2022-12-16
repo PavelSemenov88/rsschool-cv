@@ -1,0 +1,33 @@
+.footer {
+  
+  background-color: $fone-header;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (max-width: 1250px) {
+      width: 90%;
+      padding-right: 15px;
+    }
+    .footer-github {
+      margin: 0;
+
+    }
+    .footer-year {
+      margin: 0;
+
+    }
+    .footer-youtube {
+
+    }
+    .footer-rss {
+      width: 100px;
+      height: 37px;
+
+    }
+  }
+}
