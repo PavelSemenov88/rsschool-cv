@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Pavel Semenov</title>
+    <script src="./js/scrooll.js" defer></script>
+    <script src="./js/burger.js" defer></script>
+
   </head>
   <body>
     <header class="header">
       <div class="container">
+        <button class="burger-menu"></button>
         <nav class="menu">
           <ul>
             <li class="menu-list">
@@ -35,33 +45,52 @@
             </li>
           </ul>
         </nav>
+        
       </div>
     </header>
 
     <main class="main">
       <div class="container">
         <div class="intro">
-          <h1 class="intro-title">Привет!!! <br> Меня зовут <br> Павел Семенов</h1>
+          <h1 class="intro-title">
+            Привет!!! <br />
+            Меня зовут <br />
+            Павел Семенов
+          </h1>
           <div class="intro-img">
-            <img class="intro-img__foto" src="./img/foto.jpg" alt="Pavel Semenov">
+            <img
+              class="intro-img__foto"
+              src="./img/foto.jpg"
+              alt="Pavel Semenov"
+            />
           </div>
-
         </div>
         <h2 class="main-title">Персональная информация</h2>
-        <section class="main-section">
+        <section id="contacts" class="main-section">
           <h3 class="title-h3">Контакты</h3>
           <ul class="main-section__list main-text">
             <li class="mail">semencheb@yandex.ru</li>
-            <li class="vkontakte"><a target="_blank" href="https://vk.com/id10214713">Павел Семенов</a></li>
+            <li class="vkontakte">
+              <a target="_blank" href="https://vk.com/id10214713"
+                >Павел Семенов</a
+              >
+            </li>
             <li class="discord">Павел88#7174</li>
           </ul>
         </section>
-        <section class="main-center">
+        <section id="about" class="main-center">
           <h3 class="title-h3">Обо мне</h3>
-          <span class="main-center__text main-text">Мне 34 года. В этом году я решил погрузиться в новую и интересную для меня область - программирование. После прохождения курса "Осноый Frontend разработки" от Иннополиса, я понял, что мне понравилась верстать на предпроцессоре SCSS и программировать на JavaScript. Я горю желанием постоянно изучать новое. У меня прекрасная жена и дочка. </span>
+          <span class="main-center__text main-text"
+            >Мне 34 года. В этом году я решил погрузиться в новую и интересную
+            для меня область - программирование. После прохождения курса "Осноый
+            Frontend разработки" от Иннополиса, я понял, что мне понравилась
+            верстать на предпроцессоре SCSS и программировать на JavaScript. Я
+            горю желанием постоянно изучать новое. У меня прекрасная жена и
+            дочка.
+          </span>
         </section>
         <h2 class="main-title">Мой опыт</h2>
-        <section class="main-section">
+        <section id="skills" class="main-section">
           <h3 class="title-h3">Навыки</h3>
           <ul class="main-section__list main-text">
             <li class="point">HTML5</li>
@@ -72,55 +101,80 @@
             <li class="point">GIT</li>
           </ul>
         </section>
-        <section class="main-center">
+        <section id="code" class="main-center">
           <h3 class="title-h3">пример кода</h3>
           <pre>
-            <code class="code main-text">document.addEventListener('click', (e) => {
-    
+            <code class="code main-text">
+              document.addEventListener('click', (e) => {
               if (e.target === dropdownButton) {
                 e.preventDefault();
-                dropdownList.classList.toggle('dropdow__list_visible');
+                dropdownList.classList.toggle('dropdow-visible');
               } else {
-                dropdownList.classList.remove('dropdow__list_visible');
+                dropdownList.classList.remove('dropdow-visible');
               }
             });</code>
           </pre>
         </section>
-        <section class="main-section">
+        <section id="education" class="main-section">
           <h3 class="title-h3">Образование</h3>
           <ul class="main-section__list main-text">
-            <li class="point">Курс "Основы Frontend-разработки" университет Иннополис</li>
+            <li class="point">
+              Курс "Основы Frontend-разработки" университет Иннополис
+            </li>
             <li class="point">RS PreSchool</li>
           </ul>
         </section>
-        <section class="main-center">
+        <section id="english" class="main-center">
           <h3 class="title-h3">Английский язык</h3>
-          <span class="main-text">Мой уровень владения английским языком - A1</span>
+          <span class="main-text"
+            >Мой уровень владения английским языком - A1</span
+          >
         </section>
-        <section class="main-project">
+        <section id="projects" class="main-project">
           <h3 class="title-h3">Проекты</h3>
           <div class="project">
-            <a class="project__img" href="https://pavelsemenov88.github.io/LoremIpsum/" target="_blank">
-              <img src="./img/project-1.png" alt="LoremIpsum">
+            <a
+              class="project__img"
+              href="https://pavelsemenov88.github.io/LoremIpsum/"
+              target="_blank"
+            >
+              <img src="./img/project-1.png" alt="LoremIpsum" />
             </a>
             <div class="project-desc">
-              <h4 class="project-desc__title">
-                LoremIpsum</h4>
+              <h4 class="project-desc__title">LoremIpsum</h4>
               <h5 class="project-desc__techno">HTML, CSS, JS</h5>
-              <p class="project-desc__text">Тестовый сайт для оформление заказов</p>
-              <a class="project-desc__link" href="https://pavelsemenov88.github.io/LoremIpsum/" target="_blank">Открыть проект</a>
+              <p class="project-desc__text">
+                Тестовый сайт для оформление заказов
+              </p>
+              <a
+                class="project-desc__link"
+                href="https://pavelsemenov88.github.io/LoremIpsum/"
+                target="_blank"
+                >Открыть проект</a
+              >
             </div>
           </div>
 
           <div class="project">
-            <a class="project__img" href="https://pavelsemenov88.github.io/masterStroy/" target="_blank">
-              <img src="./img/project-2.png" alt="">
+            <a
+              class="project__img"
+              href="https://pavelsemenov88.github.io/masterStroy/"
+              target="_blank"
+            >
+              <img src="./img/project-2.png" alt="" />
             </a>
             <div class="project-desc">
               <h4 class="project-desc__title">masterStroy</h4>
               <h5 class="project-desc__techno">HTML, CSS, JS</h5>
-              <p class="project-desc__text">Сайт по продажи стротельных материалов и строительных услуг</p>
-              <a class="project-desc__link" href="https://pavelsemenov88.github.io/masterStroy/" target="_blank">Открыть проект</a>
+              <p class="project-desc__text">
+                Сайт по продажи стротельных материалов и строительных услуг
+              </p>
+              <a
+                class="project-desc__link"
+                href="https://pavelsemenov88.github.io/masterStroy/"
+                target="_blank"
+                >Открыть проект</a
+              >
             </div>
           </div>
         </section>
@@ -128,17 +182,30 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="footer-github main-text" href="https://github.com/PavelSemenov88" target="_blank">GITHUB</a>
+        <a
+          class="footer-github main-text"
+          href="https://github.com/PavelSemenov88"
+          target="_blank"
+          >GITHUB</a
+        >
         <span class="footer-year main-text">2022</span>
-        <a class="footer-youtube" href="https://www.youtube.com/@RollingScopesSchool" target="_blank">
-          <img src="./img/youtube.svg" alt="youtube">
+        <a
+          class="footer-youtube"
+          href="https://www.youtube.com/@RollingScopesSchool"
+          target="_blank"
+        >
+          <img src="./img/youtube.svg" alt="youtube" />
         </a>
-        <a class="footer-rss" href="https://rs.school/js-stage0/" target="_blank">
-          <img src="./img/rs.svg" alt="RS School">
+        <a
+          class="footer-rss"
+          href="https://rs.school/js-stage0/"
+          target="_blank"
+        >
+          <img src="./img/rs.svg" alt="RS School" />
         </a>
       </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
   </body>
 </html>
