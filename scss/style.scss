@@ -1,3 +1,5 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 $black-text: #000;
 $fone-header: #f6f6f6;
 $title-gray: #bbbbbb;
@@ -30,12 +32,16 @@ a {
 .title-h3 {
   font-size: 26px;
   line-height: 39px;
-  // display: block;
   font-family: "Poppins", sans-serif;
   color: $black-text;
   text-transform: uppercase;
   font-weight: 700;
   z-index: 2;
+  @media (max-width: 1200px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
 }
 .main-text {
   font-family: "Poppins", sans-serif;
@@ -43,12 +49,13 @@ a {
   color: $text-gray;
   font-size: 22px;
   line-height: 33px;
+  margin-top: 15px;
 
   @media (max-width: 1200px) {
     font-size: 18px;
     line-height: 27px;
   }
-  @media (max-width: 320) {
+  @media (max-width: 600px) {
     font-size: 14px;
     line-height: 20px;
   }
