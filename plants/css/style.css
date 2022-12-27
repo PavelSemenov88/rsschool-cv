@@ -58,4 +58,99 @@ body {
 }
 .header .container .header-wrapper .menu-burger {
   display: none;
+}
+
+.welcome {
+  background-color: #edf2ec;
+}
+.welcome .container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 62px 0;
+}
+.welcome .container .welcome-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome .container .welcome-wrapper .welcome-img {
+  max-width: 445px;
+}
+.welcome .container .welcome-wrapper .welcome-img img {
+  width: 100%;
+}
+.welcome .container .welcome-wrapper .welcome-content {
+  max-width: 549px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+.welcome .container .welcome-wrapper .welcome-content .content__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+  margin-bottom: 42px;
+}
+.welcome .container .welcome-wrapper .welcome-content .content__title .content__title_green {
+  color: #499a18;
+}
+.welcome .container .welcome-wrapper .welcome-content .content__text {
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+  margin-bottom: 48px;
+}
+.welcome .container .welcome-wrapper .welcome-content .content__button {
+  width: 158px;
+  height: 44px;
+  cursor: pointer;
+  border: 2px solid #e06733;
+  border-radius: 10px;
+  color: #010201;
+  background-color: #edf2ec;
+}
+.welcome .container .welcome-wrapper .welcome-content .content__button:hover {
+  color: #ffffff;
+  background-color: #e06733;
+}
+
+.about {
+  background-color: #ffffff;
+}
+.about .container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 93.5px 0;
+}
+.about .container .about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .container .about-wrapper .about-content {
+  max-width: 605px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+}
+.about .container .about-wrapper .about-content .about-content__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499a18;
+}
+.about .container .about-wrapper .about-content .about-content__title .about-content__title_orange {
+  color: #e06733;
+}
+.about .container .about-wrapper .about-content .about-content__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+}
+.about .container .about-wrapper .about-img {
+  max-width: 464px;
+}
+.about .container .about-wrapper .about-img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
