@@ -1,2 +1,21 @@
+$black: #010201;
+$white: #ffffff;
+$fone: #edf2ec;
+$green: #499a18;
+$orange: #e06733;
+$text-gray: #636060;
+$title-gray: #717171;
 
-@import 'block/header';
+* {
+  box-sizing: border-box;
+}
+body {
+  
+  max-width: 1400px;
+  margin: 0 auto;
+  // font-family: "Inika", serif;
+  // font-family: "Inter", sans-serif;
+}
+
+
+@import "block/header";
