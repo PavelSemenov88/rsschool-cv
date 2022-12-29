@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/accordion.js" defer></script>
+  <script src="./js/dropdown.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -214,11 +215,67 @@
           </div>
         </div>
         <div class="prices-right">
-          <h2 class="prices-right__title">Our best <span class="prices-right__title_green">gardeners</span> are <br> ready to help you</h2>
+          <h2 class="prices-right__title">Our best <span class="prices-right__title_green">gardeners</span> are <br>
+            ready to help you</h2>
           <div class="prices-right__button">
             <button class="button">Contact us</button>
           </div>
           <img src="./img/leafs-price.png" alt="leafs" class="prices-rigth__img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts-wrapper">
+        <div class="contacts-left">
+          <img src="./img/contact_woman_1.png" alt="" class="contacts-left__img">
+        </div>
+        <div class="contacts-right">
+          <h2 class="contacts-right__title">Contact us</h2>
+          <div class="dropdown">
+            <div class="dropdown-wrapper">
+              <button class="dropdown-button">
+                <p class="dropdown-button__text">City</p>
+                <div class="dropdown-button__icon"></div>
+              </button>
+              <ul class="dropdown-list">
+                <li data-value='1' class="list">Canandaigua, NY</li>
+                <li data-value='2' class="list">New York City</li>
+                <li data-value='3' class="list">Yonkers, NY</li>
+                <li data-value='4' class="list">Sherrill, NY</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cities">
+            <div class="cities-wrapper">
+              <div class="cities-card">
+                <div class="card-line">
+                  <span class="card-line__title">City:</span>
+                  <span class="card-line__text">Canandaigua, NY</span>
+                </div>
+
+                <div class="card-line">
+                  <span class="card-line__title">Phone:</span>
+                  <span class="card-line__text">+1 585 393 0001</span>
+                </div>
+
+                <div class="card-line">
+                  <span class="card-line__title">Office adress:</span>
+                  <span class="card-line__text">151 Charlotte Street</span>
+                </div>
+                <div class="card-button">
+                  <div class="button">
+                    <p class="button-text">Call us</p>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
