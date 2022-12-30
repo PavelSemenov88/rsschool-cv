@@ -7,7 +7,7 @@ const dropdownList = document.querySelector('.dropdown-list');
 
 const lists = document.querySelectorAll('.list');
 
-// const dropdownWrapper = document.querySelector('.dropdown-wrapper');
+const cities = document.querySelectorAll('.cities');
 
 dropdownButton.addEventListener('click', () => {
   dropdownButton.classList.toggle('dropdown-button_active');
@@ -16,8 +16,20 @@ dropdownButton.addEventListener('click', () => {
 })
 
 lists.forEach((list) => {
+  
   list.addEventListener('click', (e) => {
     dropdownButtonText.innerText = e.target.innerText;
+    const dataList = list.dataset.list;
+
+    cities.forEach((city) => {
+      const dataCity = city.dataset.cities;
+
+      if (dataList === dataCity) {
+        city.classList.add('cities-active');
+      } else {
+        city.classList.remove('cities-active');
+      }
+    })
 
   })
 })

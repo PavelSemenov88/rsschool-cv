@@ -394,17 +394,21 @@ body {
   padding-top: 60px;
   font-family: "Inika";
   font-style: normal;
+  position: relative;
 }
 .contacts .container .contacts-wrapper .contacts-right .contacts-right__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #499a18;
-  margin-bottom: 37px;
+  margin-bottom: 134px;
 }
 .contacts .container .contacts-wrapper .contacts-right .dropdown {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  top: 148px;
+  right: 0;
 }
 .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
   width: 450px;
@@ -470,21 +474,24 @@ body {
   display: block;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities {
-  display: flex;
+  display: none;
   justify-content: flex-end;
-}
-.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper {
-  margin-top: 47px;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
   width: 450px;
   padding: 17px 0 0 33px;
   border: 1px solid #010201;
   border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line {
   height: 50px;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
   font-size: 16px;
   line-height: 40px;
   letter-spacing: 0.05em;
@@ -496,4 +503,28 @@ body {
 }
 .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line .card-line__text {
   color: #717171;
+}
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button {
+  display: flex;
+  justify-content: center;
+}
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button {
+  width: 122px;
+  height: 26px;
+  margin-bottom: 32px;
+  padding-top: 7px;
+  border: 1px solid #e06733;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10px;
+  color: #717171;
+}
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button:hover {
+  background: #e06733;
+  color: #ffffff;
+}
+.contacts .container .contacts-wrapper .contacts-right .cities-active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
