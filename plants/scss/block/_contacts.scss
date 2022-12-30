@@ -1,0 +1,171 @@
+.contacts {
+  background-color: $fone;
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    .contacts-wrapper {
+      display: flex;
+      .contacts-left {
+        width: 42.05%;
+        padding-top: 53px;
+        .contacts-left__img {
+        }
+      }
+      .contacts-right {
+        width: 57.95%;
+        padding-top: 60px;
+        font-family: "Inika";
+        font-style: normal;
+        position: relative;
+
+        .contacts-right__title {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 52px;
+          color: $green;
+          margin-bottom: 134px;
+        }
+
+        .dropdown {
+          display: flex;
+          justify-content: flex-end;
+          position: absolute;
+          top: 148px;
+          right: 0;
+
+          .dropdown-wrapper {
+            .dropdown-button {
+              width: 450px;
+              height: 50px;
+              padding: 0 35px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background: $accordion-item-active;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 0px;
+
+              .dropdown-button__text {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+                color: $title-gray;
+              }
+              .dropdown-button__icon {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: $trigger-icon-active;
+                background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00003 2.99997L1.00002 1.00008' stroke='white' stroke-width='0.5' stroke-linecap='round'/%3E%3Cpath d='M3 3L5 1' stroke='white' stroke-width='0.5' stroke-linecap='round'/%3E%3C/svg%3E ");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+
+              .dropdown-button__icon_active {
+                background: $dropdown-icon-active;
+                background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.99997 1.00003L4.99998 2.99992' stroke='white' stroke-width='0.5' stroke-linecap='round'/%3E%3Cpath d='M3 1L1 3' stroke='white' stroke-width='0.5' stroke-linecap='round'/%3E%3C/svg%3E ");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+            .dropdown-button_active {
+              background: $dropdown-button-active;
+              border: 1px solid $accordion-item-active;
+              box-shadow: none;
+            }
+            .dropdown-list {
+              display: none;
+              width: 450px;
+              padding: 27px 35px 19px;
+              background: $dropdown-list;
+
+              .list {
+                height: 35px;
+                margin-bottom: 12px;
+                border-bottom: 1px solid $trigger-icon;
+                font-size: 16px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+                color: $green;
+                cursor: pointer;
+              }
+              .list:hover {
+                border-bottom: 1px solid $title-gray;
+                color: $title-gray;
+              }
+            }
+            .dropdown-list_active {
+              display: block;
+            }
+          }
+        }
+        .cities {
+          display: none;
+          justify-content: flex-end;
+          .cities-wrapper {
+            // margin-top: 47px;
+
+            .cities-card {
+              width: 450px;
+              padding: 17px 0 0 33px;
+              border: 1px solid $black;
+              border-radius: 20px;
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 400;
+
+              .card-line {
+                height: 50px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+
+                font-size: 16px;
+                line-height: 40px;
+                letter-spacing: 0.05em;
+
+                .card-line__title {
+                  display: inline-block;
+                  width: 127.5px;
+                  color: $black;
+                }
+                .card-line__text {
+                  color: $title-gray;
+                }
+              }
+              .card-button {
+                display: flex;
+                justify-content: center;
+
+                .button {
+                  width: 122px;
+                  height: 26px;
+                  margin-bottom: 32px;
+                  padding-top: 7px;
+                  border: 1px solid $orange;
+                  border-radius: 5px;
+                  text-align: center;
+                  cursor: pointer;
+                  font-weight: 700;
+                  font-size: 10px;
+                  color: $title-gray;
+                }
+                .button:hover {
+                  background: $orange;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+        .cities-active {
+          display: flex;
+        }
+      }
+    }
+  }
+}
