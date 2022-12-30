@@ -25,7 +25,6 @@
 
           .accordion-item {
             width: 250px;
-            // padding: 16px 40px;
             background: $fone;
             border-radius: 20px;
 
@@ -34,6 +33,7 @@
               justify-content: space-between;
               padding: 16px 40px;
               cursor: pointer;
+
               .trigger-title {
               }
               .trigger-icon {
