@@ -3,7 +3,7 @@
 }
 
 body {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -41,6 +41,7 @@ body {
   justify-content: space-between;
   width: 452px;
   height: 50px;
+  padding-top: 5px;
 }
 .header .container .header-wrapper .menu .menu-list .menu-item {
   display: flex;
@@ -74,7 +75,7 @@ body {
   align-items: center;
 }
 .welcome .container .welcome-wrapper .welcome-img {
-  max-width: 445px;
+  max-width: 448.8px;
 }
 .welcome .container .welcome-wrapper .welcome-img img {
   width: 100%;
@@ -84,13 +85,14 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
+  padding-top: 7px;
 }
 .welcome .container .welcome-wrapper .welcome-content .content__title {
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
   color: #717171;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 }
 .welcome .container .welcome-wrapper .welcome-content .content__title .content__title_green {
   color: #499a18;
@@ -99,7 +101,8 @@ body {
   font-size: 20px;
   line-height: 35px;
   color: #636060;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
+  padding-bottom: 3px;
 }
 .welcome .container .welcome-wrapper .welcome-content .content__button {
   width: 158px;
@@ -109,6 +112,11 @@ body {
   border-radius: 10px;
   color: #010201;
   background-color: #edf2ec;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 .welcome .container .welcome-wrapper .welcome-content .content__button:hover {
   color: #ffffff;
@@ -129,13 +137,14 @@ body {
   align-items: center;
 }
 .about .container .about-wrapper .about-content {
-  max-width: 605px;
+  max-width: 600px;
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
 }
 .about .container .about-wrapper .about-content .about-content__title {
-  margin-bottom: 40px;
+  padding-top: 4px;
+  margin-bottom: 38px;
   font-size: 40px;
   line-height: 52px;
   color: #499a18;
@@ -144,6 +153,9 @@ body {
   color: #e06733;
 }
 .about .container .about-wrapper .about-content .about-content__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #636060;
@@ -161,7 +173,7 @@ body {
 .service .container {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 40px 0 66px;
+  padding: 38px 0 66px;
 }
 .service .container .service-wrapper .service-content {
   margin-bottom: 80px;
@@ -172,13 +184,16 @@ body {
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
-  margin-right: 158px;
+  margin-right: 156px;
   font-size: 40px;
   line-height: 52px;
   color: #499a18;
 }
+.service .container .service-wrapper .service-content .service-content__buttons {
+  padding-top: 5px;
+}
 .service .container .service-wrapper .service-content .service-content__buttons .button {
-  margin-right: 38px;
+  margin-right: 35px;
   width: 161px;
   height: 50px;
   border: 1px solid #e06733;
@@ -195,6 +210,9 @@ body {
 .service .container .service-wrapper .service-content .service-content__buttons .button:hover {
   background: #e06733;
   color: #ffffff;
+}
+.service .container .service-wrapper .service-content .service-content__buttons .button_padding-right {
+  padding-right: 5px;
 }
 .service .container .service-wrapper .service-cards {
   display: flex;
@@ -221,11 +239,18 @@ body {
   font-size: 20px;
   color: #e06733;
 }
+.service .container .service-wrapper .service-cards .card .card-content .card-content__title_padding {
+  padding-right: 3px;
+}
 .service .container .service-wrapper .service-cards .card .card-content .card-content__text {
-  margin-bottom: 38px;
+  padding-top: 3px;
+  margin-bottom: 35px;
   font-weight: 400;
   font-size: 16px;
   color: #717171;
+}
+.service .container .service-wrapper .service-cards .card .card-content .card-content__text_padding {
+  padding-right: 3px;
 }
 
 .prices {
@@ -234,7 +259,7 @@ body {
 .prices .container {
   max-width: 1220px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 39px;
 }
 .prices .container .prices-wrapper {
   display: flex;
@@ -253,12 +278,13 @@ body {
 }
 .prices .container .prices-wrapper .prices-left .accordion {
   width: 332px;
-  padding: 34px 41px;
+  padding: 33px 39px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item {
   width: 250px;
+  height: 50px;
   background: #edf2ec;
   border-radius: 20px;
 }
@@ -267,6 +293,13 @@ body {
   justify-content: space-between;
   padding: 16px 40px;
   cursor: pointer;
+}
+.prices .container .prices-wrapper .prices-left .accordion .accordion-item .accordion-trigger .trigger-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
 }
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item .accordion-trigger .trigger-icon {
   width: 16px;
@@ -329,6 +362,7 @@ body {
 }
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item_active {
   background: #D6E7D2;
+  height: 161px;
 }
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item:nth-child(1),
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item:nth-child(2) {
@@ -391,7 +425,7 @@ body {
 }
 .contacts .container .contacts-wrapper .contacts-right {
   width: 57.95%;
-  padding-top: 60px;
+  padding-top: 59px;
   font-family: "Inika";
   font-style: normal;
   position: relative;
@@ -413,7 +447,7 @@ body {
 .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
   width: 450px;
   height: 50px;
-  padding: 0 35px;
+  padding: 0 35px 0 21px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -549,12 +583,16 @@ body {
   color: #010201;
 }
 .footer .container .footer-wrapper .footer-info {
-  width: 180px;
+  width: 167px;
   display: flex;
   justify-content: space-between;
 }
+.footer .container .footer-wrapper .footer-school {
+  padding-left: 19px;
+}
 .footer .container .footer-wrapper .footer-messenger {
-  width: 188px;
+  width: 187px;
+  padding-bottom: 4px;
   display: flex;
   justify-content: space-between;
 }

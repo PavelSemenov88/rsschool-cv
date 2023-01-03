@@ -3,7 +3,7 @@
   .container {
     max-width: 1220px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 39px;
     .prices-wrapper {
       display: flex;
       justify-content: space-between;
@@ -19,12 +19,13 @@
         }
         .accordion {
           width: 332px;
-          padding: 34px 41px;
+          padding: 33px 39px;
           border: 1px solid $border-card;
           border-radius: 20px;
 
           .accordion-item {
             width: 250px;
+            height: 50px;
             background: $fone;
             border-radius: 20px;
 
@@ -35,6 +36,11 @@
               cursor: pointer;
 
               .trigger-title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
               }
               .trigger-icon {
                 width: 16px;
@@ -102,6 +108,7 @@
           }
           .accordion-item_active {
             background: $accordion-item-active;
+            height: 161px;
           }
           .accordion-item:nth-child(1),
           .accordion-item:nth-child(2) {

@@ -9,12 +9,13 @@
       justify-content: space-between;
       align-items: center;
       .about-content {
-        max-width: 605px;
+        max-width: 600px;
         font-family: "Inika";
         font-style: normal;
         font-weight: 400;
         .about-content__title {
-          margin-bottom: 40px;
+          padding-top: 4px;
+          margin-bottom: 38px;
           font-size: 40px;
           line-height: 52px;
           color: $green;
@@ -24,6 +25,9 @@
           }
         }
         .about-content__text {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
           font-size: 20px;
           line-height: 30px;
           color: $text-gray;
