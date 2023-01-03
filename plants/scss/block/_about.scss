@@ -1,0 +1,44 @@
+.about {
+  background-color: $white;
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 93.5px 0;
+    .about-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .about-content {
+        max-width: 600px;
+        font-family: "Inika";
+        font-style: normal;
+        font-weight: 400;
+        .about-content__title {
+          padding-top: 4px;
+          margin-bottom: 38px;
+          font-size: 40px;
+          line-height: 52px;
+          color: $green;
+
+          .about-content__title_orange {
+            color: $orange;
+          }
+        }
+        .about-content__text {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $text-gray;
+        }
+      }
+      .about-img {
+        max-width: 464px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
