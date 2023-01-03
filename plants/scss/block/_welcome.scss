@@ -9,9 +9,11 @@
       justify-content: space-between;
       align-items: center;
       .welcome-img {
-        max-width: 445px;
+        max-width: 448.8px;
+
         img {
           width: 100%;
+
         }
       }
       .welcome-content {
@@ -19,13 +21,14 @@
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
+        padding-top: 7px;
 
         .content__title {
           font-weight: 700;
           font-size: 45px;
           line-height: 50px;
           color: $title-gray;
-          margin-bottom: 42px;
+          margin-bottom: 43px;
 
           .content__title_green {
             color: $green;
@@ -35,7 +38,8 @@
           font-size: 20px;
           line-height: 35px;
           color: $text-gray;
-          margin-bottom: 48px;
+          margin-bottom: 45px;
+          padding-bottom: 3px;
         }
         .content__button {
           width: 158px;
@@ -45,6 +49,11 @@
           border-radius: 10px;
           color: $black;
           background-color: $fone;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
         }
         .content__button:hover {
           color: $white;

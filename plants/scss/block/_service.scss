@@ -4,7 +4,7 @@
   .container {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 40px 0 66px;
+    padding: 38px 0 66px;
 
     .service-wrapper {
       .service-content {
@@ -16,20 +16,24 @@
           font-family: "Inika";
           font-style: normal;
           font-weight: 400;
-          margin-right: 158px;
+          margin-right: 156px;
           font-size: 40px;
           line-height: 52px;
           color: $green;
         }
 
         .service-content__buttons {
+          padding-top: 5px;
           .button {
-            margin-right: 38px;
+            margin-right: 35px;
             @include button;
           }
 
           .button:hover {
             @include button-hover;
+          }
+          .button_padding-right {
+            padding-right: 5px;
           }
         }
       }
@@ -60,11 +64,18 @@
               font-size: 20px;
               color: $orange;
             }
+            .card-content__title_padding {
+              padding-right: 3px;
+            }
             .card-content__text {
-              margin-bottom: 38px;
+              padding-top: 3px;
+              margin-bottom: 35px;
               font-weight: 400;
               font-size: 16px;
               color: $title-gray;
+            }
+            .card-content__text_padding {
+              padding-right: 3px;
             }
           }
         }
