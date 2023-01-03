@@ -362,6 +362,7 @@ body {
 }
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item_active {
   background: #D6E7D2;
+  height: 161px;
 }
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item:nth-child(1),
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item:nth-child(2) {

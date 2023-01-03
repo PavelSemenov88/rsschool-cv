@@ -108,6 +108,7 @@
           }
           .accordion-item_active {
             background: $accordion-item-active;
+            height: 161px;
           }
           .accordion-item:nth-child(1),
           .accordion-item:nth-child(2) {
