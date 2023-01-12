@@ -248,7 +248,12 @@
     <div class="container">
       <div class="contacts-wrapper">
         <div class="contacts-left">
-          <img src="./img/contact_woman_1.png" alt="" class="contacts-left__img">
+          <picture>
+              <source media="(max-width: 800px)" srcset="./img/contact_woman_1-768w.png">
+              <source media="(min-width: 801px)" srcset="./img/contact_woman_1.png">
+              <img src="./img/contact_woman_1.png" alt="" class="contacts-left__img">
+            </picture>
+          
         </div>
         <div class="contacts-right">
           <h2 class="contacts-right__title">Contact us</h2>
