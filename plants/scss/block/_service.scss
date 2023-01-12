@@ -13,6 +13,7 @@
         align-items: center;
 
         .service-content__title {
+          max-width: 306px;
           font-family: "Inika";
           font-style: normal;
           font-weight: 400;
@@ -47,6 +48,7 @@
           margin-bottom: 55px;
 
           .card__img {
+            max-width: 100%;
             border-radius: 20px 20px 0px 0px;
           }
           

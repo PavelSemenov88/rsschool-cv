@@ -35,6 +35,13 @@ body {
   background-color: $fone;
   color: $orange;
   cursor: pointer;
+
+  @media (max-width: 720px) {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 @mixin button-hover {
@@ -50,4 +57,5 @@ body {
 @import "block/contacts";
 @import "block/footer";
 
-@import "block/media";
+@import "block/media-768";
+@import "block/media-380";
