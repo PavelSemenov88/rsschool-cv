@@ -34,10 +34,6 @@
 }
 
 @media (max-width: 970px) {
-  // .service .container .service-wrapper .service-cards .card .card__img {
-  //   // width: 281px;
-  // }
-
   .contacts .container .contacts-wrapper {
     flex-direction: column-reverse;
     text-align: center;
@@ -167,6 +163,7 @@
     .prices-right {
       
       .prices-right__title {
+        max-width: 100%;
         margin-top: 101px;
         margin-bottom: 29px;
         font-size: 25px;

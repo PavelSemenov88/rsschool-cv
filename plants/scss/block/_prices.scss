@@ -24,7 +24,7 @@
           border-radius: 20px;
 
           .accordion-item {
-            width: 250px;
+            width: 100%;
             height: 50px;
             background: $fone;
             border-radius: 20px;
@@ -120,6 +120,7 @@
       .prices-right {
         text-align: right;
         .prices-right__title {
+          max-width: 452px;
           margin-bottom: 40px;
           font-size: 40px;
           line-height: 50px;
