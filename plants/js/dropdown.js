@@ -33,8 +33,11 @@ lists.forEach((list) => {
         city.classList.remove('cities-active');
       }
     })
-    contactstLeft.style.display = 'none';
-    contactsWrapper.style.flexDirection = 'column';
+    if (document.documentElement.clientWidth <= 380) {
+      contactstLeft.style.display = 'none';
+      contactsWrapper.style.flexDirection = 'column';
+    }
+
   })
 })
 

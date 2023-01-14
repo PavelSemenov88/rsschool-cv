@@ -18,8 +18,10 @@ accordionTriggers.forEach((accordionTrigger, index) => {
       accordionItems[index].classList.remove('accordion-item_active');
       triggerIcons[index].classList.remove('trigger-icon_active');
       accordionContents[index].classList.remove('accordion-content_active');
-
-      pricesRight.style.display = 'block';
+      if (document.documentElement.clientWidth <= 380) {
+        pricesRight.style.display = 'block';
+      }
+      
 
     } else {
       accordionItems.forEach(accordionItem => {
@@ -42,7 +44,9 @@ accordionTriggers.forEach((accordionTrigger, index) => {
       })
       accordionContents[index].classList.add('accordion-content_active');
 
-      pricesRight.style.display = 'none';
+      if (document.documentElement.clientWidth <= 380) {
+        pricesRight.style.display = 'none';
+      }
 
     }
 
