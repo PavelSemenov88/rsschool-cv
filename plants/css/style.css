@@ -839,6 +839,25 @@ body {
   .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-list {
     width: 300px;
   }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
+    width: 300px;
+    padding: 22px 36px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line {
+    height: auto;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line .card-line__title {
+    width: 58px;
+    line-height: 20px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line .card-line__text {
+    width: 143px;
+    display: inline-block;
+    line-height: 20px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button {
+    margin: 10px 0 0 12px;
+  }
 }
 @media (max-width: 500px) {
   .header .container .header-wrapper .menu {
@@ -986,10 +1005,22 @@ body {
     line-height: 33px;
   }
   .contacts .container .contacts-wrapper .contacts-right .dropdown {
-    top: 139px;
+    top: 101px;
   }
   .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
     padding: 0 20px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button .dropdown-button__text {
+    font-size: 16px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities {
+    top: 200px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper {
+    width: 90%;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
+    width: 100%;
   }
   .contacts .container .contacts-wrapper .contacts-left {
     padding-top: 128px;
@@ -1014,10 +1045,23 @@ body {
   }
 }
 @media (max-width: 360px) {
-  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper {
-    width: 100%;
-  }
   .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
     width: 100%;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper {
+    width: 100%;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
+    width: 100%;
+    padding: 23px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line .card-line__text {
+    width: 125px;
   }
 }/*# sourceMappingURL=style.css.map */

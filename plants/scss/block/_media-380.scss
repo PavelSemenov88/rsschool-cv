@@ -42,17 +42,39 @@
       }
     }
   }
-  .contacts
-    .container
-    .contacts-wrapper
-    .contacts-right
-    .dropdown
-    .dropdown-wrapper {
-    .dropdown-button {
-      width: 300px;
+  .contacts .container .contacts-wrapper .contacts-right {
+    .dropdown .dropdown-wrapper {
+      .dropdown-button {
+        width: 300px;
+      }
+      .dropdown-list {
+        width: 300px;
+      }
     }
-    .dropdown-list {
-      width: 300px;
+
+    .cities {
+      .cities-wrapper .cities-card {
+        width: 300px;
+        padding: 22px 36px;
+
+        .card-line {
+          height: auto;
+
+          .card-line__title {
+            width: 58px;
+            line-height: 20px;
+          }
+          .card-line__text {
+            width: 143px;
+            display: inline-block;
+            line-height: 20px;
+          }
+        }
+
+        .card-button .button {
+          margin: 10px 0 0 12px;
+        }
+      }
     }
   }
 }
@@ -229,10 +251,21 @@
         line-height: 33px;
       }
       .dropdown {
-        top: 139px;
+        top: 101px;
         .dropdown-wrapper .dropdown-button {
           padding: 0 20px;
-          
+          .dropdown-button__text {
+            font-size: 16px;
+          }
+        }
+      }
+      .cities {
+        top: 200px;
+        .cities-wrapper {
+          width: 90%;
+          .cities-card {
+            width: 100%;
+          }
         }
       }
     }
@@ -249,7 +282,6 @@
       width: 170px;
     }
     .footer-messenger {
-      
       .messenger {
         position: relative;
         width: 31px;
@@ -260,16 +292,32 @@
           left: 0;
         }
       }
-      
     }
   }
 }
 
 @media (max-width: 360px) {
-  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper {
-    width: 100%;
-    .dropdown-button {
+  .contacts .container .contacts-wrapper .contacts-right {
+    .dropdown .dropdown-wrapper {
+      .dropdown-button {
+        width: 100%;
+      }
+    }
+    .cities .cities-wrapper {
       width: 100%;
+      .cities-card {
+        width: 100%;
+        padding: 23px;
+        .card-line {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 5px;
+          .card-line__text {
+            width: 125px;
+          }
+        }
+      }
     }
   }
 }
