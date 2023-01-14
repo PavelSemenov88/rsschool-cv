@@ -243,37 +243,43 @@
     }
   }
 
-  .contacts .container .contacts-wrapper {
-    .contacts-right {
-      padding-top: 26px;
-      .contacts-right__title {
-        font-size: 25px;
-        line-height: 33px;
-      }
-      .dropdown {
-        top: 101px;
-        .dropdown-wrapper .dropdown-button {
-          padding: 0 20px;
-          .dropdown-button__text {
-            font-size: 16px;
+  .contacts .container {
+    .contacts-wrapper {
+      height: 445px;
+      .contacts-right {
+        padding-top: 26px;
+        .contacts-right__title {
+          font-size: 25px;
+          line-height: 33px;
+        }
+        .dropdown {
+          top: 101px;
+          .dropdown-wrapper {
+            .dropdown-button {
+              padding: 0 20px;
+              .dropdown-button__text {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .cities {
+          top: 200px;
+          .cities-wrapper {
+            width: 85%;
+            .cities-card {
+              width: 100%;
+            }
           }
         }
       }
-      .cities {
-        top: 200px;
-        .cities-wrapper {
-          width: 90%;
-          .cities-card {
-            width: 100%;
-          }
-        }
+      .contacts-left {
+        padding-top: 128px;
+        padding-right: 9px;
       }
-    }
-    .contacts-left {
-      padding-top: 128px;
-      padding-right: 9px;
     }
   }
+  
   .footer .container .footer-wrapper {
     padding-top: 9px;
     padding-bottom: 12px;
@@ -296,15 +302,15 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 379px) {
   .contacts .container .contacts-wrapper .contacts-right {
     .dropdown .dropdown-wrapper {
+      width: 91%;
       .dropdown-button {
         width: 100%;
       }
     }
     .cities .cities-wrapper {
-      width: 100%;
       .cities-card {
         width: 100%;
         padding: 23px;
@@ -314,7 +320,8 @@
           justify-content: center;
           margin-bottom: 5px;
           .card-line__text {
-            width: 125px;
+            width: 60%;
+            padding-left: 10px;
           }
         }
       }

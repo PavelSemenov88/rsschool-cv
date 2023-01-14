@@ -997,6 +997,9 @@ body {
   .prices .container .prices-wrapper .prices-right .prices-rigth__img {
     display: none;
   }
+  .contacts .container .contacts-wrapper {
+    height: 445px;
+  }
   .contacts .container .contacts-wrapper .contacts-right {
     padding-top: 26px;
   }
@@ -1017,7 +1020,7 @@ body {
     top: 200px;
   }
   .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper {
-    width: 90%;
+    width: 85%;
   }
   .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
     width: 100%;
@@ -1044,11 +1047,11 @@ body {
     left: 0;
   }
 }
-@media (max-width: 360px) {
-  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
-    width: 100%;
+@media (max-width: 379px) {
+  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper {
+    width: 91%;
   }
-  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper {
+  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
     width: 100%;
   }
   .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
@@ -1062,6 +1065,7 @@ body {
     margin-bottom: 5px;
   }
   .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-line .card-line__text {
-    width: 125px;
+    width: 60%;
+    padding-left: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

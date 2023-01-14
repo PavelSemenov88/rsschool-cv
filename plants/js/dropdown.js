@@ -9,6 +9,9 @@ const lists = document.querySelectorAll('.list');
 
 const cities = document.querySelectorAll('.cities');
 
+const contactstLeft = document.querySelector('.contacts-left');
+const contactsWrapper = document.querySelector('.contacts-wrapper');
+
 dropdownButton.addEventListener('click', () => {
   dropdownButton.classList.add('dropdown-button_active');
   dropdownButtonIcon.classList.toggle('dropdown-button__icon_active');
@@ -30,13 +33,13 @@ lists.forEach((list) => {
         city.classList.remove('cities-active');
       }
     })
-
+    contactstLeft.style.display = 'none';
+    contactsWrapper.style.flexDirection = 'column';
   })
 })
 
 window.addEventListener('click', (e) => {
   if (!e.target.classList.contains('dropdown-button') && !e.target.parentElement.classList.contains('dropdown-button') && !e.target.classList.contains('dropdown-list')) {
-    // dropdownButton.classList.remove('dropdown-button_active');
     dropdownButtonIcon.classList.remove('dropdown-button__icon_active');
     dropdownList.classList.remove('dropdown-list_active');
   }
