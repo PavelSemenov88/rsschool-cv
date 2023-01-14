@@ -950,6 +950,9 @@ body {
   .prices .container {
     padding-top: 24px;
   }
+  .prices .container .prices-wrapper {
+    height: 488px;
+  }
   .prices .container .prices-wrapper .prices-left {
     position: relative;
     margin-left: 6px;
