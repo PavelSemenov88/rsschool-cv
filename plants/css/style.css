@@ -35,6 +35,7 @@ body {
 .header .container .header-wrapper .header-logo .header-logo__text {
   font-size: 16px;
   line-height: 21px;
+  margin-bottom: -3px;
 }
 .header .container .header-wrapper .menu .menu-list {
   display: flex;
@@ -46,11 +47,11 @@ body {
 .header .container .header-wrapper .menu .menu-list .menu-item {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .header .container .header-wrapper .menu .menu-list .menu-item .menu-item__link {
   font-size: 16px;
-  line-height: 50px;
+  line-height: 30px;
+  margin: 10px 0;
   color: #010201;
 }
 .header .container .header-wrapper .menu .menu-list .menu-item .menu-item__link:hover {
@@ -60,7 +61,38 @@ body {
 .header .container .header-wrapper .menu-burger {
   display: none;
   width: 40px;
-  height: 24px;
+  height: 28px;
+}
+.header .container .header-wrapper .menu-burger .burger-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+.header .container .header-wrapper .menu-burger .burger-wrapper .burger__line {
+  width: 100%;
+  border: 1px solid #717171;
+  background-color: #717171;
+}
+.header .container .header-wrapper .menu-burger .burger-wrapper_active {
+  position: relative;
+  justify-content: center;
+}
+.header .container .header-wrapper .menu-burger .burger-wrapper_active .burger__line:nth-child(2), .header .container .header-wrapper .menu-burger .burger-wrapper_active .burger__line:nth-child(3) {
+  display: none;
+}
+.header .container .header-wrapper .menu-burger .burger-wrapper_active .burger__line:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+  top: calc(50% - 2px);
+  transition: 0.5s ease-in;
+}
+.header .container .header-wrapper .menu-burger .burger-wrapper_active .burger__line:nth-child(4) {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: calc(50% - 2px);
+  transition: 0.5s ease-in;
 }
 
 .welcome {
@@ -807,7 +839,7 @@ body {
 .prices,
 .service,
 .welcome {
-    padding: 0 25px;
+    padding: 0 25px 0 24px;
   }
   .header .container .header-wrapper .menu .menu-list {
     width: 350px;
@@ -859,11 +891,38 @@ body {
     margin: 10px 0 0 12px;
   }
 }
+@media (max-width: 650px) {
+  .service .container .service-wrapper .service-cards {
+    justify-content: center;
+  }
+  .service .container .service-wrapper .service-cards .card {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 @media (max-width: 500px) {
   .header .container .header-wrapper .menu {
     position: absolute;
-    right: 20px;
-    top: -250px;
+    right: 75px;
+    top: -260px;
+    background-color: #DCE9D9;
+    border-radius: 10px;
+    transition: top 1s;
+  }
+  .header .container .header-wrapper .menu .menu-list {
+    width: 100px;
+    height: 255px;
+    flex-direction: column;
+  }
+  .header .container .header-wrapper .menu .menu-list .menu-item {
+    justify-content: center;
+  }
+  .header .container .header-wrapper .menu_active {
+    top: 25px;
+  }
+  .header .container .header-wrapper .menu-transition {
+    top: -260px;
+    transition: top 1s;
   }
   .header .container .header-wrapper .menu-burger {
     display: block;
@@ -874,10 +933,14 @@ body {
   .welcome .container .welcome-wrapper .welcome-content {
     max-width: 100%;
   }
+  .service .container .service-wrapper .service-cards .card {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 @media (max-width: 380px) {
   .header .container {
-    padding: 38px 0;
+    padding: 33px 0 39px 0;
   }
   .welcome .container {
     padding: 15px 0 24px 0;
@@ -889,7 +952,7 @@ body {
   }
   .welcome .container .welcome-wrapper .welcome-content .content__text {
     margin-bottom: 23px;
-    padding-left: 2px;
+    padding-left: 1px;
   }
   .welcome .container .welcome-wrapper .welcome-content .content__button {
     width: 100px;
