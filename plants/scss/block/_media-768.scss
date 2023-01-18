@@ -124,6 +124,7 @@
         }
         .service-content__buttons {
           padding-top: 43px;
+          margin-left: -1px
         }
       }
       .service-cards .card {
@@ -136,6 +137,7 @@
 
           .card-content__title {
             margin: 10px auto 6px;
+            margin-left: -3px;
           }
 
           .card-content__text {
@@ -213,6 +215,9 @@
     
     .footer-info {
       height: 40px;
+      .footer-info__symbol {
+        margin-left: -3px;
+      }
     }
     .footer-school {
       padding-left: 0;
