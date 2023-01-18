@@ -25,6 +25,7 @@
         .header-logo__text {
           font-size: 16px;
           line-height: 21px;
+          margin-bottom: -3px;
         }
       }
       .menu {
@@ -38,10 +39,11 @@
           .menu-item {
             display: flex;
             align-items: center;
-            cursor: pointer;
+
             .menu-item__link {
               font-size: 16px;
-              line-height: 50px;
+              line-height: 30px;
+              margin: 10px 0;
               color: $black;
             }
             .menu-item__link:hover {
@@ -51,8 +53,45 @@
           }
         }
       }
+      
       .menu-burger {
         display: none;
+        width: 40px;
+        height: 28px;
+
+        .burger-wrapper {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          cursor: pointer;
+
+          .burger__line {
+            width: 100%;
+            border: 1px solid $title-gray;
+            background-color: $title-gray;
+          }
+        }
+        .burger-wrapper_active {
+          position: relative;
+          justify-content: center;
+
+          .burger__line:nth-child(2), .burger__line:nth-child(3) {
+            display: none;
+          }
+          .burger__line:nth-child(1) {
+            position: absolute;
+            transform: rotate(45deg);
+            top: calc(50% - 2px);
+            transition: 0.5s ease-in;
+          }
+          .burger__line:nth-child(4) {
+            position: absolute;
+            transform: rotate(-45deg);
+            top: calc(50% - 2px);
+            transition: 0.5s ease-in;
+          }
+        }
       }
     }
   }

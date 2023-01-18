@@ -3,19 +3,26 @@
 const accordionItems = document.querySelectorAll('.accordion-item');
 
 const accordionTriggers = document.querySelectorAll('.accordion-trigger');
-  const triggerIcons = document.querySelectorAll('.trigger-icon');
-  const accordionContents = document.querySelectorAll('.accordion-content');
+const triggerIcons = document.querySelectorAll('.trigger-icon');
+const accordionContents = document.querySelectorAll('.accordion-content');
 
-  accordionTriggers.forEach((accordionTrigger, index) => {
-  
+const pricesRight = document.querySelector('.prices-right');
 
-    accordionTrigger.addEventListener('click', () => {
+accordionTriggers.forEach((accordionTrigger, index) => {
 
-    if(accordionTrigger.classList.contains('accordion-trigger_active')) {
+
+  accordionTrigger.addEventListener('click', () => {
+
+    if (accordionTrigger.classList.contains('accordion-trigger_active')) {
       accordionTrigger.classList.remove('accordion-trigger_active');
       accordionItems[index].classList.remove('accordion-item_active');
       triggerIcons[index].classList.remove('trigger-icon_active');
       accordionContents[index].classList.remove('accordion-content_active');
+      if (document.documentElement.clientWidth <= 380) {
+        pricesRight.style.display = 'block';
+      }
+      
+
     } else {
       accordionItems.forEach(accordionItem => {
         accordionItem.classList.remove('accordion-item_active');
@@ -37,6 +44,9 @@ const accordionTriggers = document.querySelectorAll('.accordion-trigger');
       })
       accordionContents[index].classList.add('accordion-content_active');
 
+      if (document.documentElement.clientWidth <= 380) {
+        pricesRight.style.display = 'none';
+      }
 
     }
 
