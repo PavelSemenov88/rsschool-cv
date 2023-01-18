@@ -261,6 +261,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 1px;
 }
 .service .container .service-wrapper .service-cards .card {
   margin-bottom: 55px;
@@ -764,6 +765,7 @@ body {
   }
   .service .container .service-wrapper .service-content .service-content__buttons {
     padding-top: 43px;
+    margin-left: -1px;
   }
   .service .container .service-wrapper .service-cards .card {
     margin-bottom: 37px;
@@ -774,6 +776,7 @@ body {
   }
   .service .container .service-wrapper .service-cards .card .card-content .card-content__title {
     margin: 10px auto 6px;
+    margin-left: -3px;
   }
   .service .container .service-wrapper .service-cards .card .card-content .card-content__text {
     margin: 0 auto 20px;
@@ -826,6 +829,9 @@ body {
   }
   .footer .container .footer-wrapper .footer-info {
     height: 40px;
+  }
+  .footer .container .footer-wrapper .footer-info .footer-info__symbol {
+    margin-left: -3px;
   }
   .footer .container .footer-wrapper .footer-school {
     padding-left: 0;
@@ -966,7 +972,7 @@ body {
   .about .container .about-wrapper .about-content .about-content__title {
     font-size: 25px;
     line-height: 33px;
-    padding-left: 5px;
+    padding-left: 2px;
     margin: 0 auto 14px;
   }
   .about .container .about-wrapper .about-content .about-content__text {
@@ -990,6 +996,7 @@ body {
     font-size: 25px;
     line-height: 33px;
     margin-right: 55px;
+    margin-left: -1px;
   }
   .service .container .service-wrapper .service-content .service-content__buttons {
     padding-top: 38px;
@@ -1002,7 +1009,7 @@ body {
   }
   .service .container .service-wrapper .service-cards {
     justify-content: center;
-    margin-left: 5px;
+    margin-left: 3px;
   }
   .service .container .service-wrapper .service-cards .card {
     margin-bottom: 33px;
@@ -1018,7 +1025,7 @@ body {
   }
   .prices .container .prices-wrapper .prices-left {
     position: relative;
-    margin-left: 6px;
+    margin-left: 4px;
   }
   .prices .container .prices-wrapper .prices-left .prices-left__title {
     font-size: 25px;
@@ -1028,6 +1035,7 @@ body {
   }
   .prices .container .prices-wrapper .prices-left .accordion {
     position: absolute;
+    top: 67px;
     left: 0;
     right: 0;
     width: 223px;
@@ -1039,12 +1047,15 @@ body {
   .prices .container .prices-wrapper .prices-left .accordion .accordion-item .accordion-trigger .trigger-title {
     font-size: 15px;
   }
+  .prices .container .prices-wrapper .prices-left .accordion .accordion-item .accordion-trigger .trigger-icon {
+    margin-top: 3px;
+  }
   .prices .container .prices-wrapper .prices-left .accordion .accordion-item_active {
     height: 188px;
   }
   .prices .container .prices-wrapper .prices-left .accordion .accordion-item:nth-child(1),
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item:nth-child(2) {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   .prices .container .prices-wrapper .prices-right {
     margin-top: 234px;
@@ -1056,9 +1067,6 @@ body {
   }
   .prices .container .prices-wrapper .prices-right .prices-right__button {
     margin-bottom: 40px;
-  }
-  .prices .container .prices-wrapper .prices-right .prices-right__button .button {
-    padding-left: 2px;
   }
   .prices .container .prices-wrapper .prices-right .prices-rigth__img {
     display: none;
@@ -1072,6 +1080,8 @@ body {
   .contacts .container .contacts-wrapper .contacts-right .contacts-right__title {
     font-size: 25px;
     line-height: 33px;
+    padding-bottom: 2px;
+    margin-left: -3px;
   }
   .contacts .container .contacts-wrapper .contacts-right .dropdown {
     top: 101px;
@@ -1081,6 +1091,9 @@ body {
   }
   .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button .dropdown-button__text {
     font-size: 16px;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-list {
+    width: 100%;
   }
   .contacts .container .contacts-wrapper .contacts-right .cities {
     top: 200px;
@@ -1093,7 +1106,7 @@ body {
   }
   .contacts .container .contacts-wrapper .contacts-left {
     padding-top: 128px;
-    padding-right: 9px;
+    padding-right: 11px;
   }
   .footer .container .footer-wrapper {
     padding-top: 9px;
