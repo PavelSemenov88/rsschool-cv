@@ -5,17 +5,16 @@ const menu = document.querySelector('.menu');
 
 
 document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('menu-item')) {
+  if (document.documentElement.clientWidth <= 500) {
 
-  } else if (menu.classList.contains('menu_active')) {
-    menu.classList.add('menu-transition');
-    burgerWrapper.classList.remove('burger-wrapper_active');
-    menu.classList.remove('menu_active');
+    if (e.target === burgerWrapper || e.target.classList.contains('burger__line')) {
 
-  }else {
-    menu.classList.remove('menu-transition');
-    burgerWrapper.classList.add('burger-wrapper_active');
-    menu.classList.add('menu_active');
-
+      burgerWrapper.classList.toggle('burger-wrapper_active');
+      menu.classList.toggle('menu_active');
+    } else {
+      burgerWrapper.classList.remove('burger-wrapper_active');
+      menu.classList.remove('menu_active')
+    }
   }
+
 })
