@@ -46,4 +46,4 @@ window.addEventListener('click', (e) => {
     dropdownButtonIcon.classList.remove('dropdown-button__icon_active');
     dropdownList.classList.remove('dropdown-list_active');
   }
-})
+});

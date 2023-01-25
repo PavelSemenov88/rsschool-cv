@@ -615,7 +615,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button {
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call {
   width: 122px;
   height: 26px;
   margin-bottom: 32px;
@@ -628,7 +628,7 @@ body {
   font-size: 10px;
   color: #717171;
 }
-.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button:hover {
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call:hover {
   background: #e06733;
   color: #ffffff;
 }
@@ -1122,6 +1122,11 @@ body {
   }
   .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
     width: 100%;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call {
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 14px;
   }
   .contacts .container .contacts-wrapper .contacts-left {
     padding-top: 128px;
