@@ -101,6 +101,9 @@
                 line-height: 20px;
                 color: $title-gray;
               }
+              .content__button:hover {
+                @include button-hover;
+              }
             }
             .accordion-content_active {
               display: block;

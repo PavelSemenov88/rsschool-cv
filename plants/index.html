@@ -17,6 +17,7 @@
   <script src="./js/scroll.js" defer></script>
   <script src="./js/index.js" defer></script>
   <script src="./js/burgerMenu.js" defer></script>
+  <script src="./js/service.js" defer></script>
   <title>Plants</title>
 </head>
 
@@ -70,7 +71,7 @@
           <h1 class="content__title">We grow <span class="content__title_green">plants</span> and give you oxygen</h1>
           <p class="content__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <button class="content__button">LEARN MORE</button>
+          <button class="content__btn">LEARN MORE</button>
         </div>
 
       </div>
@@ -100,14 +101,14 @@
         <div class="service-content">
           <h2 class="service-content__title">Service and our projects</h2>
           <div class="service-content__buttons">
-            <button class="button">Gardens</button>
-            <button class="button">Lawn</button>
-            <button class="button button_padding-right">Planting</button>
+            <button class="button service-button" data-btn="1">Gardens</button>
+            <button class="button service-button" data-btn="2">Lawn</button>
+            <button class="button button_padding-right service-button" data-btn="3">Planting</button>
           </div>
         </div>
         <div class="service-cards">
 
-          <div class="card">
+          <div class="card"  data-card="1">
             <picture>
               <source media="(max-width: 800px)" srcset="./img/service-1-768w.png">
               <source media="(min-width: 801px)" srcset="./img/service-1.png">
@@ -119,7 +120,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-card="3">
             <picture>
               <source media="(max-width: 800px)" srcset="./img/service-2-768w.png">
               <source media="(min-width: 801px)" srcset="./img/service-2.png">
@@ -132,7 +133,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card" data-card="2">
             <picture>
               <source media="(max-width: 800px)" srcset="./img/service-3-768w.png">
               <source media="(min-width: 801px)" srcset="./img/service-3.png">
@@ -145,7 +146,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card" data-card="3">
             <picture>
               <source media="(max-width: 800px)" srcset="./img/service-4-768w.png">
               <source media="(min-width: 801px)" srcset="./img/service-4.png">
@@ -158,7 +159,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card" data-card="1">
             <picture>
               <source media="(max-width: 800px)" srcset="./img/service-5-768w.png">
               <source media="(min-width: 801px)" srcset="./img/service-5.png">
@@ -171,7 +172,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card" data-card="3">
             <picture>
               <source media="(max-width: 800px)" srcset="./img/service-6-768w.png">
               <source media="(min-width: 801px)" srcset="./img/service-6.png">
@@ -276,110 +277,6 @@
                 <li data-list='3' class="list">Yonkers, NY</li>
                 <li data-list='4' class="list">Sherrill, NY</li>
               </ul>
-            </div>
-          </div>
-
-          <div class="cities" data-cities="1">
-            <div class="cities-wrapper">
-              <div class="cities-card">
-                <div class="card-line">
-                  <span class="card-line__title">City:</span>
-                  <span class="card-line__text">Canandaigua, NY</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Phone:</span>
-                  <span class="card-line__text">+1 585 393 0001</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Office adress:</span>
-                  <span class="card-line__text">151 Charlotte Street</span>
-                </div>
-                <div class="card-button">
-                  <div class="button">
-                    <p class="button-text">Call us</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cities" data-cities="2">
-            <div class="cities-wrapper">
-              <div class="cities-card">
-                <div class="card-line">
-                  <span class="card-line__title">City:</span>
-                  <span class="card-line__text">New York City</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Phone:</span>
-                  <span class="card-line__text">+1 212 456 0002</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Office adress:</span>
-                  <span class="card-line__text">9 East 91st Street</span>
-                </div>
-                <div class="card-button">
-                  <div class="button">
-                    <p class="button-text">Call us</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cities" data-cities="3">
-            <div class="cities-wrapper">
-              <div class="cities-card">
-                <div class="card-line">
-                  <span class="card-line__title">City:</span>
-                  <span class="card-line__text">Yonkers, NY</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Phone:</span>
-                  <span class="card-line__text">+1 914 678 0003</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Office adress:</span>
-                  <span class="card-line__text">511 Warburton Ave</span>
-                </div>
-                <div class="card-button">
-                  <div class="button">
-                    <p class="button-text">Call us</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cities" data-cities="4">
-            <div class="cities-wrapper">
-              <div class="cities-card">
-                <div class="card-line">
-                  <span class="card-line__title">City:</span>
-                  <span class="card-line__text">Sherrill, NY</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Phone:</span>
-                  <span class="card-line__text">+1 315 908 0004</span>
-                </div>
-
-                <div class="card-line">
-                  <span class="card-line__title">Office adress:</span>
-                  <span class="card-line__text">14 WEST Noyes BLVD</span>
-                </div>
-                <div class="card-button">
-                  <div class="button">
-                    <p class="button-text">Call us</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 

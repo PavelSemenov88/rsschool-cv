@@ -138,7 +138,7 @@ body {
   margin-bottom: 45px;
   padding-bottom: 3px;
 }
-.welcome .container .welcome-wrapper .welcome-content .content__button {
+.welcome .container .welcome-wrapper .welcome-content .content__btn {
   width: 158px;
   height: 44px;
   cursor: pointer;
@@ -152,7 +152,7 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-.welcome .container .welcome-wrapper .welcome-content .content__button:hover {
+.welcome .container .welcome-wrapper .welcome-content .content__btn:hover {
   color: #ffffff;
   background-color: #e06733;
 }
@@ -250,9 +250,11 @@ body {
     line-height: 20px;
   }
 }
-.service .container .service-wrapper .service-content .service-content__buttons .button:hover {
+.service .container .service-wrapper .service-content .service-content__buttons .button:hover,
+.service .container .service-wrapper .service-content .service-content__buttons .button-hover {
   background: #e06733;
   color: #ffffff;
+  transition: 0.3s linear 0.3s;
 }
 .service .container .service-wrapper .service-content .service-content__buttons .button_padding-right {
   padding-right: 5px;
@@ -296,6 +298,10 @@ body {
 }
 .service .container .service-wrapper .service-cards .card .card-content .card-content__text_padding {
   padding-right: 3px;
+}
+.service .container .service-wrapper .service-cards .blur {
+  filter: blur(2px);
+  transition: 0.5s linear 0.5s;
 }
 
 .prices {
@@ -402,6 +408,10 @@ body {
   line-height: 20px;
   color: #717171;
 }
+.prices .container .prices-wrapper .prices-left .accordion .accordion-item .accordion-content .content__button:hover {
+  background: #e06733;
+  color: #ffffff;
+}
 .prices .container .prices-wrapper .prices-left .accordion .accordion-item .accordion-content_active {
   display: block;
 }
@@ -498,6 +508,9 @@ body {
   top: 148px;
   right: 0;
 }
+.contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper {
+  position: relative;
+}
 .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button {
   width: 450px;
   height: 50px;
@@ -508,6 +521,7 @@ body {
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
+  cursor: pointer;
 }
 .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-button .dropdown-button__text {
   font-family: "Inter";
@@ -560,9 +574,14 @@ body {
 }
 .contacts .container .contacts-wrapper .contacts-right .dropdown .dropdown-wrapper .dropdown-list_active {
   display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  z-index: 3;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities {
-  display: none;
+  display: flex;
   justify-content: flex-end;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
@@ -596,7 +615,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button {
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call {
   width: 122px;
   height: 26px;
   margin-bottom: 32px;
@@ -609,12 +628,9 @@ body {
   font-size: 10px;
   color: #717171;
 }
-.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button:hover {
+.contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call:hover {
   background: #e06733;
   color: #ffffff;
-}
-.contacts .container .contacts-wrapper .contacts-right .cities-active {
-  display: flex;
 }
 
 .footer {
@@ -1103,6 +1119,11 @@ body {
   }
   .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
     width: 100%;
+  }
+  .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call {
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 14px;
   }
   .contacts .container .contacts-wrapper .contacts-left {
     padding-top: 128px;
