@@ -30,8 +30,7 @@
             @include button;
           }
 
-          .button:hover,
-          .button-hover {
+          .button:hover {
             @include button-hover;
           }
           .button_padding-right {
@@ -82,9 +81,6 @@
               padding-right: 3px;
             }
           }
-        }
-        .blur {
-          filter: blur(2px)
         }
       }
     }

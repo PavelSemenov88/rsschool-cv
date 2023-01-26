@@ -250,8 +250,7 @@ body {
     line-height: 20px;
   }
 }
-.service .container .service-wrapper .service-content .service-content__buttons .button:hover,
-.service .container .service-wrapper .service-content .service-content__buttons .button-hover {
+.service .container .service-wrapper .service-content .service-content__buttons .button:hover {
   background: #e06733;
   color: #ffffff;
 }
@@ -297,9 +296,6 @@ body {
 }
 .service .container .service-wrapper .service-cards .card .card-content .card-content__text_padding {
   padding-right: 3px;
-}
-.service .container .service-wrapper .service-cards .blur {
-  filter: blur(2px);
 }
 
 .prices {
