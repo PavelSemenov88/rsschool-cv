@@ -101,7 +101,7 @@
         width: 100px;
         height: 255px;
         flex-direction: column;
-
+        
         .menu-item {
           justify-content: center;
         }
@@ -113,6 +113,7 @@
     .menu-transition {
       top: -260px;
       transition: top 1s;
+
     }
   }
   .header .container .header-wrapper .menu-burger {
@@ -313,11 +314,6 @@
             width: 85%;
             .cities-card {
               width: 100%;
-              .card-button .button-call {
-                margin-bottom: 0;
-                margin-top: 10px;
-                margin-left: 14px;
-              }
             }
           }
         }
@@ -328,7 +324,7 @@
       }
     }
   }
-
+  
   .footer .container .footer-wrapper {
     padding-top: 9px;
     padding-bottom: 12px;
