@@ -17,24 +17,11 @@ cities.classList.add('cities');
 const contactstLeft = document.querySelector('.contacts-left');
 const contactsWrapper = document.querySelector('.contacts-wrapper');
 
-let isListShowing = false; 
-
 dropdownButton.addEventListener('click', (e) => {
 
-  dropdownButtonIcon.classList.toggle('dropdown-button__icon_active');
-  dropdownList.classList.toggle('dropdown-list_active');
-
-  if(isListShowing) {
-    isListShowing = false;
-    if(dropdownButtonText.textContent == 'City') {
-      dropdownButton.classList.remove('dropdown-button_active');
-    }
-  } else {
-    isListShowing = true;
-    if(dropdownButtonText.textContent == 'City') {
-      dropdownButton.classList.add('dropdown-button_active');
-    }
-  }
+  dropdownButton.classList.add('dropdown-button_active');
+  dropdownButtonIcon.classList.add('dropdown-button__icon_active');
+  dropdownList.classList.add('dropdown-list_active');
 });
 
 const pullCard = (dataList) => fetch('./js/contact.json')
@@ -103,11 +90,7 @@ window.addEventListener('click', (e) => {
   if (!e.target.classList.contains('dropdown-button') && !e.target.parentElement.classList.contains('dropdown-button') && !e.target.classList.contains('dropdown-list') && !e.target.classList.contains('list')) {
     dropdownButtonIcon.classList.remove('dropdown-button__icon_active');
     dropdownList.classList.remove('dropdown-list_active');
-    
-    if(dropdownButtonText.textContent == 'City') {
-      isListShowing = false;
-      dropdownButton.classList.remove('dropdown-button_active');
-    }
+    // dropdownButton.classList.remove('dropdown-button_active');
   };
 
 });
