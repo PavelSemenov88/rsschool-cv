@@ -254,7 +254,6 @@ body {
 .service .container .service-wrapper .service-content .service-content__buttons .button-hover {
   background: #e06733;
   color: #ffffff;
-  transition: 0.3s linear 0.3s;
 }
 .service .container .service-wrapper .service-content .service-content__buttons .button_padding-right {
   padding-right: 5px;
@@ -301,7 +300,6 @@ body {
 }
 .service .container .service-wrapper .service-cards .blur {
   filter: blur(2px);
-  transition: 0.5s linear 0.5s;
 }
 
 .prices {

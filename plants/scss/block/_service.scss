@@ -33,7 +33,6 @@
           .button:hover,
           .button-hover {
             @include button-hover;
-            transition: 0.3s linear 0.3s;
           }
           .button_padding-right {
             padding-right: 5px;
@@ -85,8 +84,7 @@
           }
         }
         .blur {
-          filter: blur(2px);
-          transition: 0.5s linear 0.5s;
+          filter: blur(2px)
         }
       }
     }

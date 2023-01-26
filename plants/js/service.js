@@ -1,19 +1,17 @@
 'use strict';
 
+const serviceButtons = document.querySelectorAll('.service-button');
+const serviceCards = document.querySelectorAll('.card');
+
+
 // Выбор только двух услуг.
-
-const serviceButtons = document.querySelectorAll('[data-btn]');
-const serviceCards = document.querySelectorAll('[data-card]');
-
 let arrayButtonIndex = [];
 let arrayButtonText = [];
 
 serviceButtons.forEach((button, indexButton) => {
 
-
   button.addEventListener('click', (e) => {
-
-    const buttonText = button.dataset.btn;
+    const buttonText = button.textContent;
 
     if ((arrayButtonText.length < 2) && (arrayButtonText.indexOf(buttonText) == -1)) {
       arrayButtonText.push(buttonText)
@@ -38,7 +36,7 @@ serviceButtons.forEach((button, indexButton) => {
     }
 
     serviceCards.forEach(card => {
-      const cardTitle = card.dataset.card;
+      const cardTitle = card.querySelector('.card-content__title').textContent.split(' ');
 
       if (!(arrayButtonText.includes(cardTitle[0]))) {
         card.classList.add('blur');
@@ -60,10 +58,6 @@ serviceButtons.forEach((button, indexButton) => {
 
 
 // Выбор только одной услуги.
-
-// const serviceButtons = document.querySelectorAll('.service-button');
-// const serviceCards = document.querySelectorAll('.card');
-
 // serviceButtons.forEach(button => {
 //   button.addEventListener('click', () => {
 
