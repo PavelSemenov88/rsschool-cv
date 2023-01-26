@@ -108,9 +108,11 @@
           }
         }
         .cities {
-          display: flex;
+          display: none;
           justify-content: flex-end;
           .cities-wrapper {
+            // margin-top: 47px;
+
             .cities-card {
               width: 450px;
               padding: 17px 0 0 33px;
@@ -164,6 +166,9 @@
               }
             }
           }
+        }
+        .cities-active {
+          display: flex;
         }
       }
     }
