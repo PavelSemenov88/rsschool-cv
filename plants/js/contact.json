@@ -1,26 +1,26 @@
 [
   {
-    "City:": "Canandaigua, NY",
-    "Phone:": "+1 585 393 0001",
-    "Office adress:": "151 Charlotte Street",
+    "city": "Canandaigua, NY",
+    "phone": "+1 585 393 0001",
+    "adress": "151 Charlotte Street",
     "id": 1
   },
   {
-    "City:": "New York City",
-    "Phone:": "+1 212 456 0002",
-    "Office adress:": "9 East 91st Street",
+    "city": "New York City",
+    "phone": "+1 212 456 0002",
+    "adress": "9 East 91st Street",
     "id": 2
   },
   {
-    "City:": "Yonkers, NY",
-    "Phone:": "+1 914 678 0003",
-    "Office adress:": "511 Warburton Ave",
+    "city": "Yonkers, NY",
+    "phone": "+1 914 678 0003",
+    "adress": "511 Warburton Ave",
     "id": 3
   },
   {
-    "City:": "Sherrill, NY",
-    "Phone:": "+1 315 908 0004",
-    "Office adress:": "14 WEST Noyes BLVD",
+    "city": "Sherrill, NY",
+    "phone": "+1 315 908 0004",
+    "adress": "14 WEST Noyes BLVD",
     "id": 4
   }
 ]

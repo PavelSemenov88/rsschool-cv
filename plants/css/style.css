@@ -581,7 +581,7 @@ body {
   z-index: 3;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities {
-  display: none;
+  display: flex;
   justify-content: flex-end;
 }
 .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card {
@@ -631,9 +631,6 @@ body {
 .contacts .container .contacts-wrapper .contacts-right .cities .cities-wrapper .cities-card .card-button .button-call:hover {
   background: #e06733;
   color: #ffffff;
-}
-.contacts .container .contacts-wrapper .contacts-right .cities-active {
-  display: flex;
 }
 
 .footer {
