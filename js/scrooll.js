@@ -14,7 +14,7 @@ links.forEach(link => {
 
     seamless.scrollIntoView(elems, {
       behavior: "smooth",
-      block: "start",
+      block: "center",
       inline: "center",
     });
 
