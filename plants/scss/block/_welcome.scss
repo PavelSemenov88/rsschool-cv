@@ -1,0 +1,65 @@
+.welcome {
+  background-color: $fone;
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 62px 0;
+    .welcome-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .welcome-img {
+        max-width: 448.8px;
+
+        img {
+          width: 100%;
+
+        }
+      }
+      .welcome-content {
+        max-width: 549px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        padding-top: 7px;
+
+        .content__title {
+          font-weight: 700;
+          font-size: 45px;
+          line-height: 50px;
+          color: $title-gray;
+          margin-bottom: 43px;
+
+          .content__title_green {
+            color: $green;
+          }
+        }
+        .content__text {
+          font-size: 20px;
+          line-height: 35px;
+          color: $text-gray;
+          margin-bottom: 45px;
+          padding-bottom: 3px;
+        }
+        .content__btn {
+          width: 158px;
+          height: 44px;
+          cursor: pointer;
+          border: 2px solid $orange;
+          border-radius: 10px;
+          color: $black;
+          background-color: $fone;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .content__btn:hover {
+          color: $white;
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}
