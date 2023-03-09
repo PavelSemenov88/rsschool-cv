@@ -52,11 +52,12 @@ function smash (words) {
 
 
 ## Знания
-Курс по Основам Frontend-разработки от университета Иннополис.
+* Курс по Основам Frontend-разработки от университета Иннополис.
+* The Rolling Scopes School - JavaScript Frontend Stage#0
 
 
 *****
 
 
 ## Знания английского языка
-Базовое.
+A2
