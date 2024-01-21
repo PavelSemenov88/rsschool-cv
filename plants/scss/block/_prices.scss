@@ -1,0 +1,155 @@
+.prices {
+  background-color: $white;
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 39px;
+    .prices-wrapper {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      .prices-left {
+        color: $black;
+        .prices-left__title {
+          margin-bottom: 60px;
+          font-size: 40px;
+          line-height: 48px;
+        }
+        .accordion {
+          width: 332px;
+          padding: 33px 39px;
+          border: 1px solid $border-card;
+          border-radius: 20px;
+
+          .accordion-item {
+            width: 100%;
+            height: 50px;
+            background: $fone;
+            border-radius: 20px;
+
+            .accordion-trigger {
+              display: flex;
+              justify-content: space-between;
+              padding: 16px 40px;
+              cursor: pointer;
+
+              .trigger-title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+              }
+              .trigger-icon {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+
+                background: $trigger-icon;
+                background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00003 2.99997L1.00002 1.00008' stroke='%23717171' stroke-width='0.5' stroke-linecap='round' /%3E%3Cpath d='M3 3L5 1' stroke='%23717171' stroke-width='0.5' stroke-linecap='round' /%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+              .trigger-icon_active {
+                background: $trigger-icon-active;
+                background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.99997 1.00003L4.99998 2.99992' stroke='white' stroke-width='0.5' stroke-linecap='round'/%3E%3Cpath d='M3 1L1 3' stroke='white' stroke-width='0.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+
+            .accordion-trigger_active {
+              padding: 16px 40px 12px;
+            }
+            .accordion-content {
+              display: none;
+              margin: 0 40px;
+              padding: 6px 0 12px 0;
+              border-top: 0.5px solid $trigger-icon-active;
+
+              .content__text {
+                margin-bottom: 6px;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: 10px;
+                color: $title-gray;
+              }
+              .conten__prices {
+                margin-bottom: 12px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                .content__prices_orange {
+                  font-weight: 700;
+                  color: $orange;
+                  span {
+                    font-size: 16px;
+                  }
+                }
+              }
+              .content__button {
+                width: 86px;
+                height: 25px;
+                background: $white;
+                border-radius: 10px;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: $title-gray;
+              }
+              .content__button:hover {
+                @include button-hover;
+              }
+            }
+            .accordion-content_active {
+              display: block;
+            }
+          }
+          .accordion-item_active {
+            background: $accordion-item-active;
+            height: 161px;
+          }
+          .accordion-item:nth-child(1),
+          .accordion-item:nth-child(2) {
+            margin-bottom: 32px;
+          }
+        }
+      }
+
+      .prices-right {
+        text-align: right;
+        .prices-right__title {
+          max-width: 452px;
+          margin-bottom: 40px;
+          font-size: 40px;
+          line-height: 50px;
+          color: $black;
+          .prices-right__title_green {
+            color: $green;
+          }
+        }
+        .prices-right__button {
+          margin-bottom: 40px;
+
+          .button {
+            @include button;
+            background-color: $white;
+            font-weight: 700;
+          }
+          .button:hover {
+            @include button-hover;
+          }
+        }
+        .prices-rigth__img {
+          width: 152px;
+          height: 175px;
+          margin-bottom: 115px;
+        }
+      }
+    }
+  }
+}

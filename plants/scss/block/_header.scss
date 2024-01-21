@@ -1,0 +1,98 @@
+.header {
+  background-color: $fone;
+  .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 42px 0;
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Inika";
+      font-style: normal;
+      font-weight: 400;
+      color: $black;
+
+      .header-logo {
+        display: flex;
+        align-items: flex-end;
+        height: 21px;
+
+        .header-logo__img {
+          margin-bottom: 2px;
+        }
+        .header-logo__text {
+          font-size: 16px;
+          line-height: 21px;
+          margin-bottom: -3px;
+        }
+      }
+      .menu {
+        .menu-list {
+          display: flex;
+          justify-content: space-between;
+          width: 452px;
+          height: 50px;
+          padding-top: 5px;
+
+          .menu-item {
+            display: flex;
+            align-items: center;
+
+            .menu-item__link {
+              font-size: 16px;
+              line-height: 30px;
+              margin: 10px 0;
+              color: $black;
+            }
+            .menu-item__link:hover {
+              color: $orange;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      
+      .menu-burger {
+        display: none;
+        width: 40px;
+        height: 28px;
+
+        .burger-wrapper {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          cursor: pointer;
+
+          .burger__line {
+            width: 100%;
+            border: 1px solid $title-gray;
+            background-color: $title-gray;
+          }
+        }
+        .burger-wrapper_active {
+          position: relative;
+          justify-content: center;
+
+          .burger__line:nth-child(2), .burger__line:nth-child(3) {
+            display: none;
+          }
+          .burger__line:nth-child(1) {
+            position: absolute;
+            transform: rotate(45deg);
+            top: calc(50% - 2px);
+            transition: 0.5s ease-in;
+          }
+          .burger__line:nth-child(4) {
+            position: absolute;
+            transform: rotate(-45deg);
+            top: calc(50% - 2px);
+            transition: 0.5s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
